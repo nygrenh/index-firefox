@@ -5,5 +5,11 @@
   "description": "Firefox Add-on for Index",
   "author": "Henrik Nygren",
   "license": "",
-  "version": "0.1"
+  "version": "0.1",
+  "preferences" : [{
+    "name": "url",
+    "title": "Url of your Index instance",
+    "type": "string",
+    "value": "https://theindex.herokuapp.com/"
+    }]
 }
