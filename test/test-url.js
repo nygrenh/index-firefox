@@ -1,5 +1,5 @@
-var url = require("./url.js");
-var prefs = require("sdk/simple-prefs").prefs;
+var url = require("./url.js"),
+    prefs = require("sdk/simple-prefs").prefs;
 
 exports["test url starts with the Index url"] = function(assert){
   prefs.url = "https://a.com/";
