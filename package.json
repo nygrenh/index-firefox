@@ -1,15 +1,25 @@
 {
   "name": "index-firefox",
   "title": "index-firefox",
-  "id": "jid1-0G17Oxym5wGNDg",
+  "id": "jid1-0G17Oxym5wGNDg@jetpack",
   "description": "Firefox Add-on for Index",
   "author": "Henrik Nygren",
   "license": "",
-  "version": "0.1",
+  "version": "0.1.1",
   "preferences" : [{
     "name": "url",
     "title": "Url of your Index instance",
     "type": "string",
     "value": "https://theindex.herokuapp.com/"
-    }]
+    }],
+  "engines": {
+    "firefox": ">=35",
+    "fennec": ">=35"
+  },
+  "devDependencies": {
+  "standard": "*"
+  },
+  "scripts": {
+    "test": "standard && jpm test -b $(which firefox)"
+  }
 }
