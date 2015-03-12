@@ -17,7 +17,8 @@
     "fennec": ">=35"
   },
   "devDependencies": {
-  "standard": "*"
+    "standard": "*",
+    "jpm": "*"
   },
   "scripts": {
     "test": "standard && jpm test -b $(which firefox)"
